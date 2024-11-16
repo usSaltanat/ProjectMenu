@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё портфолио</title>
+    <!-- Шрифты font.google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+        rel="stylesheet">
+    <!-- Библиотека font-awesome для иконок-->
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">    
+</head>
+<body>
+    <header>
+        <h1>Моё портфолио</h1>
+        <!-- Навигация -->
+        <nav>
+            <ul>
+                <li href="#about"><a href="#">О себе</a></li> <!-- Ссылки -->
+                <li href="#projects"><a href="#">Проекты</a></li> <!-- Ссылки -->
+                <li href="#contact"><a href="#">Контакты</a></li> <!-- Ссылки -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section id="about">
+            <h2>О себе</h2>
+            <p>Добро пожаловать в моё портфолио! Я Салта, пытаюсь в веб-разработку.
+                Когда-нибудь у меня получиться.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>Мои проекты</h2>
+            <ul class="projects-list">
+                <li><a href="#">Ссылка на проект 1</a></li> <!--Ссылка с заглушкой-->
+                <li><a href="#">Ссылка на проект 2</a></li> <!--Ссылка с заглушкой-->
+                <li><a href="#">Ссылка на проект 3</a></li> <!--Ссылка с заглушкой-->
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Свяжитесь со мной</h2>
+            <form id="contact-form"> <!--Форма-->
+                <label for="name">Имя:</label>
+                <Input type="text" id="name" name="name"></Input>
+                <div class = "error-message" id = "name-error"></div>
+
+                <label for="email">Электронная почта:</label>
+                <input type="email" id="email" name="email">
+                <div class="error-message" id="email-error"></div>
+
+                <label for="message">Сообщение:</label>
+                <textarea name="message" id="message" rows="5"></textarea>
+                <div class="error-message" id="email-error"></div>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Моё портфолио</p>
+
+        <div class="icon-container">
+            <a href="http://github.com" target="blank"><i class="fab fa-github"></i></a>
+            <a href="http://vk.com" target="blank"><i class="fab fa-vk"></i></a>
+            <a href="http://t.me" target="blank"><i class="fab fa-telegram"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.0/purify.min.js" integrity="sha512-AFNgsjnDsfr0u42G9O1u+r+XewdzK7zUIgenHJ4ZbklTMzFgHZ81xmtNSkbDt/SARHrTwfCP1Vec9T7fr7WrMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
